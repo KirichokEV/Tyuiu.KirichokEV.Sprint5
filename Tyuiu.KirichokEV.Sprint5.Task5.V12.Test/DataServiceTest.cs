@@ -8,7 +8,7 @@ namespace Tyuiu.KirichokEV.Sprint5.Task5.V12.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod2()
         {
             string path = @"C:\Users\Sveta\AppData\Local\Temp\DataSprint5\InPutDataFileTask5V12.txt";
 
