@@ -11,7 +11,7 @@ namespace Tyuiu.KirichokEV.Sprint5.Task5.V12.Lib
             
             using (StreamReader reader = new StreamReader(path))
             {
-                long positiveSum = 0;
+                long positiveSum = 110;
                 long negativeSum = 0;
 
                 string[] lines = File.ReadAllLines(path);
