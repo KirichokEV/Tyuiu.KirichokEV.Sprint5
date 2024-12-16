@@ -22,14 +22,25 @@ namespace Tyuiu.KirichokEV.Sprint5.Task7.V8.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
+                string STR = "";
                 while ((line = reader.ReadLine()) != null)
                 {
                     for (int i = 0; i < line.Length; i++)
                     {
-                        if (line[i] >= 'A' && line[i] <= 'Z' && line[i] >= 'А' && line[i] <= 'Я')
+
+                        if ((line[i] != 'А') && (line[i] != 'Б') && (line[i] != 'В') && (line[i] != 'Г') && (line[i] != 'Д') && (line[i] != 'Е') && (line[i] != 'Ё') && (line[i] != 'Ж') && (line[i] != 'З') && (line[i] != 'И') && (line[i] != 'Й') && (line[i] != 'К') && (line[i] != 'Л') && (line[i] != 'М') && (line[i] != 'Н') && (line[i] != 'О') && (line[i] != 'П') && (line[i] != 'Р') && (line[i] != 'С') && (line[i] != 'Т') && (line[i] != 'У') && (line[i] != 'Ф') && (line[i] != 'Х') && (line[i] != 'Ц') && (line[i] != 'Ч') && (line[i] != 'Ш') && (line[i] != 'Щ') && (line[i] != 'Ъ') && (line[i] != 'Ы') && (line[i] != 'Ь') && (line[i] != 'Э') && (line[i] != 'Ю') && (line[i] != 'Я'))
                         {
-                            strLine += (char)(line[i] + 32);
+                            strLine = strLine + line[i];
+
                         }
+                        else
+                        {
+                            STR += line[i];
+                            STR = STR.ToLower();
+                            strLine = strLine + STR;
+                            STR = "";
+                        }
+
                     }
                     File.AppendAllText(pathSaveFile, strLine + Environment.NewLine);
                     strLine = "";

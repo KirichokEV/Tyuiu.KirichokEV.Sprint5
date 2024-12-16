@@ -6,7 +6,7 @@ namespace Tyuiu.KirichokEV.Sprint5.Task7.V8
     {
         static void Main(string[] args)
         {
-                       DataService ds = new DataService();
+            DataService ds = new DataService();
 
             Console.Title = "Спринт #5 | Выполнила: Киричoк Е. В.| РППб-24-1";
 
@@ -26,8 +26,8 @@ namespace Tyuiu.KirichokEV.Sprint5.Task7.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                  *");
             Console.WriteLine("*************************************************************************************");
 
-            string path = @"C:\Users\Sveta\AppData\Local\Temp\DataSprint5\InPutDataFileTask7V8.txt";
-            string pathSaveFile = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask7V8.txt" });
+            string path = @"C:\DataSprint5\InPutDataFileTask7V8.txt";
+            string pathSaveFile = @"C:\DataSprint5\OutPutFileTask7V8.txt";
             Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("*************************************************************************************");
